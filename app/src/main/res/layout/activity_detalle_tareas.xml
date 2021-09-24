@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:elevation="4dp"
+    tools:context=".ui.DetalleTareas">
+
+
+    <EditText
+        android:id="@+id/editTextIMEI"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#D3D7DC"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="    Placa"
+        android:textSize="14sp"
+        android:clickable="false"
+        android:longClickable="false"
+        android:focusable="false"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextUltimaTrans"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#D3D7DC"
+        android:clickable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="textPersonName"
+        android:longClickable="false"
+        android:text="    Concecionario"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextOnline" />
+
+    <TextView
+        android:id="@+id/direccion"
+        android:layout_width="234dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center|left"
+        android:text="direccion"
+        android:textColor="@color/colorSecondaryText"
+        app:layout_constraintEnd_toEndOf="@+id/editTextComando"
+        app:layout_constraintTop_toBottomOf="@+id/concecionario" />
+
+    <EditText
+        android:id="@+id/editTextComando"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#D3D7DC"
+        android:clickable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="textPersonName"
+        android:longClickable="false"
+        android:text="    Dirección"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUltimaTrans" />
+
+    <TextView
+        android:id="@+id/concecionario"
+        android:layout_width="234dp"
+        android:layout_height="55dp"
+        android:gravity="center|left"
+        android:text="Concecionario"
+        android:textColor="@color/colorSecondaryText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cliente" />
+
+    <EditText
+        android:id="@+id/editTextIMEIOperar"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#D3D7DC"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="    Color"
+        android:textSize="14sp"
+        android:clickable="false"
+        android:longClickable="false"
+        android:focusable="false"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextModelo" />
+
+    <EditText
+        android:id="@+id/editTextOnline"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#D3D7DC"
+        android:clickable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="textPersonName"
+        android:longClickable="false"
+        android:text="    Cliente"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName11" />
+
+    <TextView
+        android:id="@+id/cliente"
+        android:layout_width="234dp"
+        android:layout_height="55dp"
+        android:gravity="center|left"
+        android:text="cliente"
+        android:textColor="@color/colorSecondaryText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modeloVehView" />
+
+    <EditText
+        android:id="@+id/editTextModelo"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#D3D7DC"
+        android:textColor="@color/colorPrimaryText"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="    VIN"
+        android:textSize="14sp"
+        android:clickable="false"
+        android:longClickable="false"
+        android:focusable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextIMEI" />
+
+    <Button
+        android:id="@+id/btnGrabarOperacion"
+        android:layout_width="348dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorAccent"
+        android:text="INICIAR OPERACIÓN"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/placaView"
+        android:layout_width="233dp"
+        android:layout_height="55dp"
+        android:foregroundGravity="center_vertical"
+        android:gravity="center|left"
+        android:text="placa"
+        android:textColor="@color/colorSecondaryText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vinView"
+        android:layout_width="234dp"
+        android:layout_height="55dp"
+        android:foregroundGravity="center_vertical"
+        android:gravity="center|left"
+        android:text="vin"
+        android:textColor="@color/colorSecondaryText"
+        app:layout_constraintEnd_toEndOf="@+id/editTextModelo"
+        app:layout_constraintTop_toBottomOf="@+id/placaView" />
+
+    <TextView
+        android:id="@+id/colorView"
+        android:layout_width="234dp"
+        android:layout_height="55dp"
+        android:gravity="center|left"
+        android:text="color"
+        android:textColor="@color/colorSecondaryText"
+        app:layout_constraintEnd_toEndOf="@+id/editTextIMEIOperar"
+        app:layout_constraintTop_toBottomOf="@+id/vinView" />
+
+    <EditText
+        android:id="@+id/editTextMarca"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#D3D7DC"
+        android:clickable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="textPersonName"
+        android:longClickable="false"
+        android:text="    Marca"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextIMEIOperar" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName11"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#D3D7DC"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="textPersonName"
+        android:longClickable="false"
+        android:text="    Modelo"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMarca" />
+
+    <TextView
+        android:id="@+id/marcaVehView"
+        android:layout_width="234dp"
+        android:layout_height="55dp"
+        android:gravity="center|left"
+        android:text=""
+        android:textColor="@color/colorSecondaryText"
+        app:layout_constraintEnd_toEndOf="@+id/editTextMarca"
+        app:layout_constraintTop_toBottomOf="@+id/colorView" />
+
+    <TextView
+        android:id="@+id/modeloVehView"
+        android:layout_width="234dp"
+        android:layout_height="55dp"
+        android:gravity="center|left"
+        android:text=""
+        android:textColor="@color/colorSecondaryText"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName11"
+        app:layout_constraintTop_toBottomOf="@+id/marcaVehView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
